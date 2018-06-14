@@ -13,24 +13,53 @@ body {
 .navig {
     display: flex;
     flex-direction: row-reverse;
+    /*flex-direction: row;*/
+    /*justify-content: flex-end;*/
 }
 
 .nav-items {
     /*justify-content: flex-center;*/
     padding: 9px;
-    font-size: 18px;
 }
 
-.skills {
+
+
+.f1:hover {
+    background-color: red;
+}
+
+.f2:hover {
+    background-color: white;
+}
+
+.f3:hover {
+    background-color: grey;
+}
+
+.f4:hover {
+    background-color: #000fff;
+}
+
+.f5:hover {
+    background-color: #fff000;
+}
+
+
+
+/*.skills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
- a   /*justify-items: center;
+    /*justify-items: center;
 	align-items: center;*/
-}
 
-.skills-items {
-    border: 1px /*solid grey*/;
+
+}
+*/ .skills-items {
+    border: 1px
+    /*solid grey*/
+
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +84,11 @@ body {
 
 .edu {
     display: grid;
-    padding: 10%;
+    padding: 1%;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10% ;
+    grid-gap: 10%;
     /*border: 2px solid grey;*/
+
     font-size: 140%;
 }
 
@@ -91,6 +121,7 @@ h5,
 h6 {
     font-size: 140%;
     /*margin-bottom: -10px;*/
+
     animation-name: example;
     animation-duration: 4s;
     animation-direction: alternate;
@@ -101,19 +132,58 @@ h6 {
     from {
         color: red;
     }
+
     to {
         color: yellow;
     }
 }
 
-#about h3 {
+#about h3,
+h4.cap {
     margin-bottom: -10px;
+    padding-top: 5%;
 }
 
 .yr {
     /*padding: 30%;*/
+
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px /*solid white*/;
+    border: 1px
+    /*solid white*/
+
+    ;
+}
+
+.about,
+.contact,
+.portfolio,
+.skills,
+footer {
+    text-align: center;
+}
+
+h1.skills {
+    display: block;
+    /*text-align: right;*/
+}
+
+.responsive {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 0%;
+}
+
+@media(max-width: 300px) {
+	.navig{
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 320px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+    }
 }

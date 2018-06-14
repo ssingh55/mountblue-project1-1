@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="20">
+    <!-- <meta http-equiv="refresh" content="20"> -->
     <meta name="viewport" content="width:device-width,intial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Portfolio</title>
@@ -20,14 +20,16 @@
             <div class="nav-items f5"><a href="#skills">STRENGTH</a></div>
         </nav>
         <!--About Container-->
-        <div class="about" id="about">
+        <div class="about" style="position: relative;" id="about">
             <h3 class="cap">About Me</h3>
             <p class="cap">----------------Who am i</p>
             <div class="hero">
-                <div>profile pic</div>
+                <div><img src="images/background-image.jpeg" class="responsive" width="600" height="400">
+                    <p style="color: Magenta;">Shubham Singh</p>
+                </div>
                 <div class="explanation">
-                    <p>
-                        I'm a simple guy who initially was knowing nothing . Later on in the second semester C came into my life which changes nothing into my programming life. We just passed the C programming somehow in that semester and was knowing nothing about programming and the teacher also just came and taught the theory gone
+                    <p style="font-family: monospace;">
+                        I'm a simple guy who initially was knowing nothing . Later on in the second semester C came into my life which changes nothing into my programming life. We just passed the C programming somehow in that semester and was knowing nothing about programming .Then came c++ and then java then also programming not improved . In the summer training python came into which let interest in me to learn the programming language.When joined mountblue then started learning html css nd javascript to make everything beautiful.
                     </p>
                 </div>
                 <div class="btn">
@@ -35,7 +37,7 @@
                     <a href="#contact" class="button">Hire Me</a>
                 </div>
                 <div class="educatn">
-                    <h3 class="cap">Education</h3>
+                    <h4 class="cap">Education</h4>
                     <p class="cap">-------------Learning</p>
                     <div class="edu">
                         <div class="yr">
@@ -72,7 +74,7 @@
                     <div class="exp-details">
                         <h1>2018</h1>
                         <h4>June to Present</h4>
-                        <p>Full Stack Developer</p>
+                        <p>Full Stack Developer Trainee</p>
                         <p>MountBlue Technologies</p>
                         <p>Currently doing training on full stack devloper under <strong>Santu sir</strong></p>
                     </div>
@@ -103,25 +105,25 @@
             <div class="resp-container">
                 <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0566808390477!2d77.59908461441344!3d12.904076890900168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae151947c69de7%3A0xf2b320fefa7ffb8c!2sMountblue+Technologies!5e0!3m2!1sen!2sin!4v1528827454742" frameborder="0" style="margin-top: 10%; margin-left: 10%;" allowfullscreen></iframe>
             </div>
-            <div class="phone">
-                <h5>Phone</h5>
+            <div class="phone cap">
+                <h4>Phone</h4>
                 <p>+917739063702</p>
                 <p>+919614676552</p>
             </div>
-            <div class="email">
-                <h5>E-mail</h5>
+            <div class="email cap">
+                <h4>E-mail</h4>
                 <p><a href="mailto:suvamsingh55@gmail.com?Subject=Hello%20again" target="_top">suvamsingh55@gmail.com</a></p>
                 <p><a href="mailto:shubham.singh@mountblue.io?Subject=Hello%20shubham" target="_top">shubham.singh@mountblue.io</a></p>
             </div>
-            <div class="address">
-                <h5>Address</h5>
+            <div class="address cap">
+                <h4>Address</h4>
                 <p>91 springboard</p>
                 <p>J.P Nagar, Phase IV, Bengaluru </p>
             </div>
         </div>
         <!--contact ends-->
         <!--portfolio container start-->
-        <div id="portfolio">
+        <div class="portfolio" id="portfolio">
             <h4 class="cap">portfolio</h4>
             <p class="cap">---------MyWOrk</p>
             <!--mostly the project details-->
@@ -136,7 +138,7 @@
         </div>
         <!--portfolio ends-->
         <!--Strength container start -->
-        <h1>Skills</h1>
+        <h1 class="skills cap">Skills</h1>
         <div class="skills" id="skills">
             <!--about the language knowns and skills -->
             <div class="skills-items"><img src="images/java-logo.jpeg">
