@@ -22,6 +22,8 @@ body {
     padding: 9px;
 }
 
+
+
 .f1:hover {
     background-color: red;
 }
@@ -49,12 +51,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5%;
     /*justify-items: center;
-    align-items: center;*/
-}
+	align-items: center;*/
 
-.skills-items {
+
+}
+ .skills-items {
     border: 1px
     /*solid grey*/
+
     ;
     display: flex;
     justify-content: center;
@@ -78,12 +82,13 @@ body {
     text-transform: uppercase;
 }
 
-.education {
+.edu {
     display: grid;
     padding: 1%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10%;
     /*border: 2px solid grey;*/
+
     font-size: 140%;
 }
 
@@ -116,6 +121,7 @@ h5,
 h6 {
     font-size: 140%;
     /*margin-bottom: -10px;*/
+
     animation-name: example;
     animation-duration: 4s;
     animation-direction: alternate;
@@ -133,18 +139,20 @@ h6 {
 }
 
 #about h3,
-h4.capital {
+h4.cap {
     margin-bottom: -10px;
     padding-top: 5%;
 }
 
-.year {
+.yr {
     /*padding: 30%;*/
+
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px
     /*solid white*/
+
     ;
 }
 
@@ -153,7 +161,7 @@ h4.capital {
 .portfolio,
 .skills,
 footer {
-    text-align: left;
+    text-align: center;
 }
 
 h1.skills {
@@ -169,11 +177,11 @@ h1.skills {
 }
 
 @media(max-width: 300px) {
-    .nav {
-        flex-wrap: wrap;
-    }
+	.nav{
+		flex-wrap: wrap;
+	}
+	
 }
-
 @media screen and (max-width: 320px) {
     .skills {
         grid-template-columns: 1fr 1fr;
