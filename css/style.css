@@ -30,7 +30,7 @@ body {
 }
 
 .skills-items {
-    border: 1px solid grey;
+    border: 1px /*solid grey*/;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,8 @@ body {
     display: grid;
     padding: 10%;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10% border: 2px solid grey;
+    grid-gap: 10% ;
+    /*border: 2px solid grey;*/
     font-size: 140%;
 }
 
@@ -114,5 +115,5 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 1px /*solid white*/;
 }
