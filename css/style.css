@@ -46,16 +46,16 @@ body {
 
 
 
-/*.skills {
+.skills {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5%;
     /*justify-items: center;
 	align-items: center;*/
 
 
 }
-*/ .skills-items {
+ .skills-items {
     border: 1px
     /*solid grey*/
 
