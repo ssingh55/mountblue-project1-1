@@ -1,0 +1,70 @@
+a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #b7b7b7;
+	background-color:#010101;
+}
+.navig{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.nav-items{
+	justify-content: flex-center;
+	padding: 9px;
+	font-size: 18px;
+}
+/*.f1{
+
+}
+.f2{
+
+}
+.f3{
+
+}
+.f4{
+
+}
+.f5{
+
+}*/
+
+.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-gap: 5%;
+	/*justify-items: stretch;*/
+}
+.skills-items{
+	border: 1px solid grey;
+
+}
+
+.button{
+	border: 1px solid #1e1e1e;
+	background-color: red;
+	color: black;
+	padding: 1%;
+
+}
+.cap{
+	text-transform: uppercase;
+}
+.edu{
+	display: grid;
+	padding: 10%;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10%
+	border: 2px solid grey;
+
+}
+
+.form{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 2fr;
+	grid-gap: 1%;
+}
