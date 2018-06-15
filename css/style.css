@@ -10,6 +10,14 @@ body {
     background-color: #010101;
 }
 
+/*body *:not(.nav):not(.nav-items) {
+    padding: 20%;
+}*/
+
+#container{
+    padding: 10%;
+}
+
 .nav {
     display: flex;
     flex-direction: row-reverse;
@@ -22,12 +30,16 @@ body {
     padding: 9px;
 }
 
+.nav-items>a {
+    color:  #90EF32;
+}
+
 .f1:hover {
-    background-color: red;
+    background-color: grey;
 }
 
 .f2:hover {
-    background-color: white;
+    background-color: #000fff;
 }
 
 .f3:hover {
@@ -39,7 +51,7 @@ body {
 }
 
 .f5:hover {
-    background-color: #fff000;
+    background-color: grey;
 }
 
 
@@ -53,9 +65,7 @@ body {
 }
 
 .skills-items {
-    border: 1px
-    /*solid grey*/
-    ;
+    border: 1px /*solid grey*/ ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +82,8 @@ body {
     background-color: red;
     color: black;
     padding: 1%;
+    margin-top: 2px;
+    argin-right: 10px;
 }
 
 .capital {
@@ -91,21 +103,24 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 2fr;
     grid-gap: 1%;
+    margin-left: 0%;
+    grid-auto-columns: 100%;
 }
 
-.resp-container {
+.responsive-container {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
 }
 
-.resp-iframe {
+.responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     border: 0;
+    margin-top: 10%; margin-left: 10%;
 }
 
 h1,
@@ -114,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 140%;
+    font-size: 150%;
     /*margin-bottom: -10px;*/
     animation-name: example;
     animation-duration: 4s;
@@ -147,7 +162,9 @@ h4.capital {
     /*solid white*/
     ;
 }
-
+.about{
+    position: relative;
+}
 .about,
 .contact,
 .portfolio,
@@ -168,15 +185,37 @@ h1.skills {
     border-radius: 0%;
 }
 
-@media(max-width: 300px) {
+@media(max-width: 450px) {
     .nav {
         flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
     .skills {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5%;
     }
+}
+@media (min-width: 800px) /*and (max-width: 900px)*/ {
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5%;
+    }
+    .form{
+        grid-auto-columns: 60%;
+        margin-left: 9%;
+    }
+}
+
+.explanation{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-family: monospace;    
+}
+.profile
+{
+    color: white;
+    -webkit-text-stroke: 0.5px magenta;
+    font-size: 140%;
 }
