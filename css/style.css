@@ -10,11 +10,13 @@ body {
     background-color: #010101;
 }
 
+
+
 /*body *:not(.nav):not(.nav-items) {
     padding: 20%;
 }*/
 
-#container{
+.container {
     padding: 10%;
 }
 
@@ -31,7 +33,7 @@ body {
 }
 
 .nav-items>a {
-    color:  #90EF32;
+    color: #90EF32;
 }
 
 .f1:hover {
@@ -65,7 +67,7 @@ body {
 }
 
 .skills-items {
-    border: 1px /*solid grey*/ ;
+    border: 1px/*solid grey*/;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +122,8 @@ body {
     width: 80%;
     height: 100%;
     border: 0;
-    margin-top: 10%; margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 h1,
@@ -158,19 +161,19 @@ h4.capital {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px
-    /*solid white*/
-    ;
+    /*border: 1px solid white ;*/
 }
-.about{
+
+.about {
     position: relative;
 }
+
 .about,
 .contact,
 .portfolio,
 .skills,
 footer {
-    text-align: left;
+    text-align: center;
 }
 
 h1.skills {
@@ -185,13 +188,21 @@ h1.skills {
     border-radius: 0%;
 }
 
+.explanation {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-family: monospace;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 @media(max-width: 450px) {
     .nav {
         flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 360px) {
     .skills {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5%;
@@ -202,25 +213,48 @@ h1.skills {
         padding-left: 13px;
     }*/
 }
-@media (min-width: 800px) /*and (max-width: 900px)*/ {
+
+@media screen and (max-width: 768px) {
+    .explanation {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
+@media (min-width: 768px)
+/*and (max-width: 900px)*/
+
+{
     .skills {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 5%;
     }
-    .form{
+    .form {
         grid-auto-columns: 60%;
         margin-left: 9%;
     }
+    .year {
+    border: 1px solid white ;
+
+    }
+    .education_details{
+        border: 1px solid white;
+        font-weight: bolder;
+    font-size: 120%;
+    }
+    .year p{
+        font-weight: bolder;
+    font-size: 120%;
+    }
+    .education {
+    /*border: 2px solid grey;*/
+    grid-column-gap: 0%;
+    }
+    
 }
 
-.explanation{
-    margin-bottom: 30px;
-    text-align: justify;
-    font-family: monospace;    
-}
-.profile
-{
+.profile {
     color: white;
     -webkit-text-stroke: 0.5px magenta;
-    font-size: 140%;
+    font-size: 120%;
 }
