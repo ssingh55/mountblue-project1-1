@@ -107,6 +107,7 @@ body {
     grid-gap: 1%;
     margin-left: 0%;
     grid-auto-columns: 100%;
+    /*justify-items: center;*/
 }
 
 .responsive-container {
